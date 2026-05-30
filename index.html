@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OptimalGo — Autonomie énergétique en Suisse</title>
+<meta name="description" content="OptimalGo — Libre accès à l'énergie. Accompagnement complet vers l'autonomie énergétique avec le système First Element.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:      #0d1311;
+    --bg-2:    #121a17;
+    --fg:      #f4f3ee;
+    --muted:   #9aa39d;
+    --accent:  #5fd08a;
+    --line:    rgba(255,255,255,.10);
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    background:var(--bg);
+    color:var(--fg);
+    font-family:"Manrope", system-ui, sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{ color:inherit; text-decoration:none; }
+  .wrap{ max-width:980px; margin:0 auto; padding:0 26px; }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    min-height:78vh;
+    display:flex; flex-direction:column; justify-content:center;
+    text-align:center;
+    position:relative; overflow:hidden;
+    padding:5rem 0 4rem;
+  }
+  .hero::after{
+    content:""; position:absolute; left:50%; top:18%;
+    transform:translateX(-50%);
+    width:620px; height:620px; max-width:120vw;
+    background:radial-gradient(circle, rgba(95,208,138,.16), transparent 65%);
+    z-index:0;
+  }
+  .hero > *{ position:relative; z-index:1; }
+
+  .logo{ height:42px; margin:0 auto 2.4rem; display:block; }
+
+  .eyebrow{
+    text-transform:uppercase; letter-spacing:.26em;
+    font-size:.74rem; font-weight:600; color:var(--accent);
+    margin-bottom:1.3rem;
+  }
+  h1{
+    font-weight:800; letter-spacing:-.02em; line-height:1.05;
+    font-size:clamp(2.3rem, 6vw, 3.8rem);
+    max-width:16ch; margin:0 auto;
+  }
+  .lead{
+    margin:1.5rem auto 0; max-width:46ch;
+    color:var(--muted); font-size:1.12rem;
+  }
+  .btn{
+    display:inline-block; margin-top:2.4rem;
+    background:var(--accent); color:#08130c;
+    font-weight:700; font-size:.96rem;
+    padding:.9rem 1.8rem; border-radius:100px;
+    transition:transform .2s, box-shadow .2s;
+  }
+  .btn:hover{ transform:translateY(-2px); box-shadow:0 10px 28px rgba(95,208,138,.28); }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--bg-2);
+    border-top:1px solid var(--line);
+    padding:3.5rem 0 2rem;
+  }
+  .cols{
+    display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr));
+    gap:2.2rem;
+  }
+  .cols h4{
+    font-size:.74rem; text-transform:uppercase; letter-spacing:.18em;
+    color:var(--accent); margin-bottom:1rem; font-weight:600;
+  }
+  .cols ul{ list-style:none; }
+  .cols li{ margin-bottom:.55rem; }
+  .cols a, .cols address{
+    color:var(--muted); font-size:.94rem; font-style:normal;
+    transition:color .2s; line-height:1.7;
+  }
+  .cols a:hover{ color:var(--fg); }
+  .socials{ display:flex; gap:1rem; margin-top:1rem; }
+  .socials a{ color:var(--muted); }
+  .socials a:hover{ color:var(--accent); }
+
+  .copy{
+    margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--line);
+    display:flex; flex-wrap:wrap; gap:.8rem 1.5rem; justify-content:space-between;
+    font-size:.82rem; color:var(--muted);
+  }
+  .copy a:hover{ color:var(--fg); }
+  .legal{ display:flex; gap:1.2rem; flex-wrap:wrap; }
+
+  @media (max-width:560px){ .hero{ min-height:70vh; } }
+</style>
+</head>
+<body>
+
+<!-- ====== HERO ====== -->
+<section class="hero">
+  <div class="wrap">
+    <a href="https://www.optimalgo.ch/">
+      <img class="logo" src="https://www.optimalgo.ch/images/brand/logo-white.svg" alt="OptimalGo">
+    </a>
+    <p class="eyebrow">Autonomie énergétique en Suisse</p>
+    <h1>Libre accès à l'énergie.</h1>
+    <p class="lead">De la vision à la mise en œuvre — un accompagnement complet vers votre indépendance énergétique avec le système First&nbsp;Element.</p>
+    <a class="btn" href="https://www.optimalgo.ch/contact">Démarrer un projet</a>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="https://www.optimalgo.ch/">Accueil</a></li>
+          <li><a href="https://www.optimalgo.ch/first-element">First Element</a></li>
+          <li><a href="https://www.optimalgo.ch/methode">Méthode</a></li>
+          <li><a href="https://www.optimalgo.ch/realisations">Réalisations</a></li>
+          <li><a href="https://www.optimalgo.ch/blog">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="https://www.optimalgo.ch/first-element/solargo">SolarGo Pro</a></li>
+          <li><a href="https://www.optimalgo.ch/first-element/capago">CapaGo Pro</a></li>
+          <li><a href="https://www.optimalgo.ch/first-element/h2go">H2Go Pro</a></li>
+          <li><a href="https://www.optimalgo.ch/a-propos">À propos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@optimalgo.ch">info@optimalgo.ch</a></li>
+          <li><a href="tel:+41225662121">+41 22 566 21 21</a></li>
+          <li><address>Chemin du Poste 16B<br>1279 Chavannes-de-Bogis</address></li>
+        </ul>
+        <div class="socials">
+          <a href="https://www.instagram.com/optimal__go/" aria-label="Instagram">Instagram</a>
+          <a href="https://www.linkedin.com/company/optimal-go/" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="copy">
+      <span>&copy; <span id="year"></span> OptimalGo. Tous droits réservés.</span>
+      <span class="legal">
+        <a href="https://www.optimalgo.ch/mentions-legales">Mentions légales</a>
+        <a href="https://www.optimalgo.ch/confidentialite">Confidentialité</a>
+        <a href="https://www.optimalgo.ch/cgv">CGV</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
